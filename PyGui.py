@@ -51,7 +51,7 @@ def actionListener():
     str1 =e1.get()
     str2 =e2.get()
     similarPercent = genomeAsStr(str1,str2)
-    messagebox.showinfo(e2.get(),str(similarPercent)+"%")
+    messagebox.showinfo(e2.get(),str(int(similarPercent*100)/100)+"%")
 
 def initMenu():
     dropDown.place(x=0,y=0)
